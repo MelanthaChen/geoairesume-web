@@ -176,6 +176,35 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white" aria-labelledby="practical-guides-title">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <h2 id="practical-guides-title" className="text-3xl font-semibold text-slate-950">
+            Practical resume guides
+          </h2>
+          <p className="mt-3 max-w-3xl text-slate-600">
+            Fictional GeoAIResume editorial guides explain common application questions with careful, concrete advice. They are educational resources, not a resume-writing service or a promise of hiring outcomes.
+          </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ['Achievement bullets', '/achievement-bullets-guide.html'],
+              ['Application readiness', '/application-readiness-guide.html'],
+              ['ATS clarity', '/ats-clarity-guide.html'],
+              ['Career changes', '/career-change-guide.html'],
+              ['Early career resumes', '/early-career-resume-guide.html'],
+              ['Resume gaps', '/resume-gap-guide.html'],
+              ['Resume review', '/resume-review-guide.html'],
+              ['Role keywords', '/role-keywords-guide.html'],
+              ['Software engineering', '/software-engineer-resume-guide.html'],
+              ['Accessible formatting', '/accessible-resume-guide.html'],
+            ].map(([label, href]) => (
+              <a key={href} href={href} className="rounded border border-slate-200 p-4 text-sm font-semibold text-emerald-800 hover:border-emerald-400">
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
           <div className="flex flex-wrap items-end justify-between gap-5">

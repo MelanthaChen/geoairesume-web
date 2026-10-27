@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, '..')
-const siteUrl = 'https://geoairesume-web-six.vercel.app'
+const siteUrl = 'https://geo-ai-resume.vercel.app'
 const defaultLastmod = '2026-06-11'
 
 const appPath = resolve(root, 'src/App.tsx')
